@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TWYSYCSP6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1TWYSYCSP6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Николай | Портфолио фронтенд-разработчика</title>
+    <!-- Font Awesome 6 (бесплатные иконки) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+    <meta name="description" content="Портфолио Николая — фронтенд-разработчика. React, Vue, современные интерфейсы.">
+    <meta name="keywords" content="фронтенд разработчик, портфолио, React, Vue">
+    <meta name="author" content="Николай">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav class="navbar" aria-label="Главное меню">
+            <div class="logo">NK.</div>
+            <ul class="nav-menu" role="list">
+                <li><a href="#home" class="active" aria-current="page">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Открыть меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero с анимированным фоном -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="avatar">
+                    <img src="file:///C:/Users/nikolay/AppData/Roaming/Telegram%20Desktop/photo_2026-01-12_22-00-49.jpg"
+                        alt="Аватар Николая">
+                </div>
+                <h1>Привет, я <span class="highlight">Николай</span></h1>
+                <p class="typewriter">Фронтенд-разработчик, создающий современные интерфейсы</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Смотреть работы</a>
+                    <a href="#contact" class="btn btn-outline">Связаться</a>
+                </div>
+            </div>
+            <div class="hero-bg">
+                <canvas id="bg-canvas"></canvas>
+            </div>
+        </section>
+
+        <!-- О себе -->
+        <section id="about" class="about fade-in">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Я Николай, фронтенд-разработчик с опытом более 4 лет. Специализируюсь на создании адаптивных,
+                        быстрых и доступных веб-приложений. Люблю экспериментировать с анимациями и нестандартными
+                        решениями.</p>
+                    <p>В работе использую современные инструменты: React, Vue, TypeScript, Tailwind, Webpack. Постоянно
+                        учусь и слежу за трендами.</p>
+                </div>
+                <div class="skills">
+                    <h3>Ключевые навыки</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+                        <span>Vue</span><span>TypeScript</span><span>Webpack</span><span>Figma</span>
+                        <span>Jest</span><span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт работы (таймлайн) -->
+        <section id="experience" class="experience fade-in">
+            <h2>Опыт работы</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026 — настоящее время</div>
+                    <div class="timeline-content">
+                        <h3>Senior Frontend Developer</h3>
+                        <p class="company">Digital Agency «Future»</p>
+                        <p>Разработка сложных SPA, оптимизация производительности, наставничество.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 — 2024</div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <p class="company">IT-студия «WebStyle»</p>
+                        <p>Вёрстка макетов, интеграция с API, поддержка проектов.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 — 2022</div>
+                    <div class="timeline-content">
+                        <h3>Стажёр / Junior</h3>
+                        <p class="company">Стартап «EcoSoft»</p>
+                        <p>Участие в разработке CRM-системы, создание UI-компонентов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Проекты с фильтрацией -->
+        <section id="projects" class="projects">
+            <h2>Project</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="webapp">Веб-приложения</button>
+                <button class="filter-btn" data-filter="landing">Лендинги</button>
+            </div>
+            <div class="project-grid">
+                <!-- Карточки проектов (будут заполняться через JS) -->
+            </div>
+        </section>
+
+        <!-- Отзывы (карусель) -->
+        <section id="testimonials" class="testimonials fade-in">
+            <h2>Отзывы</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">«Николай отлично справился с задачей, учёл все пожелания и предложил
+                            интересные решения. Работа выполнена в срок.»</p>
+                        <p class="testimonial-author">Анна С., Team Lead</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">«Приятно работать с профессионалом. Код чистый, документированный,
+                            коммуникация на высшем уровне.»</p>
+                        <p class="testimonial-author">Дмитрий К., Product Manager</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">«Николай помог оптимизировать производительность сайта, после чего
+                            скорость загрузки выросла на 40%. Рекомендую.»</p>
+                        <p class="testimonial-author">Елена М., CEO</p>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" aria-label="Предыдущий отзыв">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Следующий отзыв">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="contact fade-in">
+            <h2>Контакты</h2>
+            <p>Обсудим ваш проект? Напишите мне!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Как к вам обращаться?" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Сообщение" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/Cade2122" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://t.me/COPATH1K" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="scroll-to-top" aria-label="Наверх"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Модальное окно для проектов -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Закрыть">&times;</span>
+            <h3 id="modal-title">Заголовок проекта</h3>
+            <p id="modal-description">Подробное описание проекта...</p>
+            <p><strong>Технологии:</strong> <span id="modal-tech">React, Node.js</span></p>
+            <a href="#" id="modal-link" target="_blank" class="btn btn-primary">Посмотреть</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Николай. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
