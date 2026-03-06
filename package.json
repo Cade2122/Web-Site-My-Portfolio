@@ -1,0 +1,30 @@
+{
+  "name": "web-site-my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  }
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cade2122/Web-Site-My-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Cade2122/Web-Site-My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Cade2122/Web-Site-My-Portfolio#readme",
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  }
+}
